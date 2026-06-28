@@ -1,0 +1,20 @@
+# Secrets / credentials — never read by the agent
+.env
+.env.*
+*.env
+secrets.*
+*.pem
+*.key
+*credentials*
+
+# DB connection strings / dumps
+*.dsn
+*.sql.bak
+pgpass*
+.pgpass
+
+# Build artifacts / deps
+/web/node_modules/
+/web/dist/
+/mileskeeper
+/mileskeeper.exe

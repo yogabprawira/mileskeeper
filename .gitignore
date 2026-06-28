@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.*
+!.env.example
+.pgpass
+
+# Go
+/mileskeeper
+/mileskeeper.exe
+
+# node / vite
+/web/node_modules/
+/web/dist/
+
+# extracted design handoff (reference only)
+/_extracted/
+/credit-card-miles-dashboard.zip
+
+# editor
+.idea/
+.vscode/
