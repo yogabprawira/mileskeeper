@@ -11,9 +11,14 @@ import (
 
 	"mileskeeper/internal/api"
 	"mileskeeper/internal/store"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	// Load .env if present; real env vars still take precedence.
+	_ = godotenv.Load()
+
 	defaultDSN := os.Getenv("DATABASE_URL")
 	if defaultDSN == "" {
 		defaultDSN = "postgres://postgres:postgres@localhost:5432/mileskeeper?sslmode=disable"
